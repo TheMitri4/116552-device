@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Дима Поливода](https://up.htmlacademy.ru/htmlcss/20/user/116552).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Фарига](https://htmlacademy.ru/profile/maximfariga).
 
 ---
 
