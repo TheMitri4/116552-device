@@ -5,8 +5,180 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-
+		<header class="main-header">
+			<h2 class="logo">Device</h2>
+			<nav class="user-navigation">
+				<ul>
+					<li><a href="#">Войти</a></li>
+					<li><a href="#">Валентин Петухов</a></li>
+					<li><a href="#">Выйти</a></li>
+					<li><a href="#">Сравнить</a></li>
+					<li><a href="#">Корзина</a></li>
+				</ul>	
+			</nav>	
+			<nav class="main-navigation">
+				<ul>
+					<li><a href="#">Каталог товаров</a>
+						<ul>
+							<li><a href="#">Виртуальная реальность</a></li>
+							<li><a href="#">Моноподы для селфи</a></li>
+							<li><a href="#">Экшн-камеры</a></li>
+							<li><a href="#">Фитнес-браслеты</a></li>
+							<li><a href="#">Умные часы</a></li>
+							<li><a href="#">Квадрокоптеры</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Гарантия</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+		</header>  
+  		<main class="container">  
+   		<section class="slider">
+   			<div class="first-slide">
+   				<img src="img/slider/1.jpg">
+   				<h2>Делай селфи, как Бен Стиллер</h2>
+   				<p>Самая длинная палка для селфи доступна в нашем магазине <br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+   				<a href="#">Подробнее</a>
+   				<table>
+   					<tr>
+   						<td>8.5 м</td>
+   						<td>5 кг</td>
+   						<td>Карбон</td>
+   					</tr>
+   					<tr>
+   						<td>Длина палки</td>
+   						<td>Вес палки</td>
+   						<td>Материал</td>
+   					</tr>
+   				</table>
+   			</div>
+   			<div class="second-slide">
+   				<img src="img/slider/2.jpg">
+   				<h2>Худеем правильно!</h2>
+   				<p>Мотивирующие фитнес-браслеты помогут найти в себе силы <br> не пропускать занятия и соблюдать диету.</p>
+   				<a href="#">Подробнее</a>
+   				<table>
+   					<tr>
+   						<td>48 часов</td>
+   					</tr>   
+   					<tr>
+   						<td>Без подзарядки</td>
+   					</tr>					
+   				</table>
+   			</div>
+   			<div class="thirst-slide">
+   				<img src="img/slider/3.jpg">
+   				<h2>Порхает как бабочка, <br>
+					жалит как пчела!</h2>
+   				<p>Этот обычный, на первый взгляд, квадрокоптер оснащен <br> мощным лазером, замаскированным под стандартную камеру.</p>
+   				<a href="#">Подробнее</a>
+   				<table>
+   					<tr>
+   						<td>800 м</td>
+   						<td>50 м</td>
+   					</tr>
+   					<tr>
+   						<td>Дальность полета</td>
+   						<td>Радиус поражения</td>
+   					</tr>
+   				</table>
+   			</div>
+   		</section>
+    	<section class="popular">
+    		<ul class="popular-list">
+				<li><a href="#">Виртуальная реальность</a></li>
+				<li><a href="#">Моноподы для селфи</a></li>
+				<li><a href="#">Экшн-камеры</a></li>
+				<li><a href="#">Фитнес-браслеты</a></li>
+				<li><a href="#">Умные часы</a></li>
+				<li><a href="#">Квадрокоптеры</a></li>
+    		</ul>
+    	</section>
+		<section class="services">
+			<section class="services-navigation">
+				
+			</section>
+			<aside>
+				<div class="delivery">
+					<h2>Доставка</h2>
+					<p>Мы с удовольствием доставим ваш товар прямо к вашему <br> подъезду совершенно бесплатно! Ведь мы неплохо <br> заработаем , поднимая его на ваш этаж.</p>
+				</div>
+				<div class="warranty">
+					<h2>Гарантия</h2>
+					<p>Если из-за возгорания купленного у нас товара у вас сгорит <br> дом — не переживайте, мы выдадим вам новый. <br> Товар , не дом , конечно же.</p>
+				</div>
+				<div class="credit">
+					<h2>Кредит</h2>
+					<p>Залезть в долговую яму стало проще! Кредитные <br> консультанты подберут для вас наиболее выгодные <br> условия кредита. Выгодные для нашего банка, разумеется.</p>
+				</div>
+			</aside>
+		</section>
+		<section class="logotypes">
+			<ul class="logotypes-list">
+				<li><img src="img/Dji.jpg" alt="Логотип Dji"></li>
+				<li><img src="img/SPGadgets.jpg" alt="Логотип SP Gadgets"></li>
+				<li><img src="img/GoPro.jpg" alt="Логотип GoPro"></li>
+				<li><img src="img/Vive.jpg" alt="Логотип Vive"></li>
+			</ul>
+		</section>
+		<section class="info">
+		<section class="about-us">
+			<h2>О нас</h2>
+			<p>Огромный выбор гаджетов не оставит равнодушным  гика,<br> который есть в каждом из нас.</p>
+			<p>Мы можем доставить ваш товар в самые отдаленные точки<br> России! DEVICE работает со многими транспортными компаниями:</p>
+			<ul class="info-list">
+				<li>Деловые линии</li>
+				<li>Автотрейдинг</li>
+				<li>ЖелДорЭкспедиция</li>
+			</ul>
+			<a href="#">Подробнее о нас</a>
+		</section>
+		<section class="contact">
+			<h2>Контакты</h2>
+			<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете <br> проверить работоспособность покупки. Всякое бывает.</p>
+			<a href="#" class="map"><img src="img/map.jpg" alt="Карта"></a>
+			<a href="#">Напишите нам</a>
+		</section>
+		</section>
+		</main>
+		<footer class="main-footer">
+			<h2 class="logo">Device</h2>
+			<nav class="user-navigation">
+				<ul>
+					<li><a href="#">Войти</a></li>
+					<li><a href="#">Валентин Петухов</a></li>
+					<li><a href="#">Выйти</a></li>
+					<li><a href="#">Сравнить</a></li>
+					<li><a href="#">Корзина</a></li>		
+				</ul>
+			</nav>
+			<p>г.Москва, ул. Строителей, 15</p>
+			<nav class="footer-navigation">
+				<ul>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Гарантия</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<p>Тел: +7(495)4959595</p>
+			<nav class="social-navigation">
+				<ul>
+					<li><a href="#">Facebook</a></li>
+					<li><a href="#">Instagram</a></li>
+					<li><a href="#">Twitter</a></li>			
+				</ul>
+			</nav>
+			<a href="#">HtmlAcademy</a>
+		</footer>
+		<section class="write-us">
+			<p>Ваше имя:</p>
+			<p>Ваш e-mail:</p>
+			<p>Текст письма:</p>
+		</section>
+		<section class="map-popup">
+			
+		</section>	
   </body>
 </html>
