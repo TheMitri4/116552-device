@@ -45,7 +45,62 @@
 			<h2 class="visually-hidden">Контент каталога</h2>
 			<div class="filter">
 				<h3 class="catalog-title">Фильтр:</h3>
-				<form action="filter-form"></form>
+				<form class="filter-form" action="https://echo.htmlacademy.ru" oninput="priceoutput.value=pricerange.value">
+					<fieldset>
+						<legend>Стоимость</legend>
+						<input type="range" min="0" max="10000" step="100" id="pricerange">
+						<output name="priceoutput"></output>
+					</fieldset>
+					<fieldset>
+						<legend>Цвет</legend>
+						<ul>
+							<li>
+								<input type="checkbox" name="" id="filter-black">
+								<label for="filter-black">
+									Черный
+								</label>
+							</li>
+							<li>
+								<input type="checkbox" name="white" id="filter-white">
+								<label for="filter-white">
+									Белый
+								</label>
+							</li>
+							<li>
+								<input type="checkbox" name="blue" id="filter-blue">
+								<label for="filter-blue">
+									Синий
+								</label>
+							</li>
+							<li>
+								<input type="checkbox" name="red" id="filter-red">
+								<label for="filter-red">
+									Красный
+								</label>
+							</li>
+							<li>
+								<input type="checkbox" name="pink" id="filter-pink">
+								<label for="filter-pink">
+									Розовый
+								</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset>
+						<legend>Bluetooth</legend>
+						<ul>
+							<li>
+								<input type="radio" name="bluetooth" value="yes" id="bluetooth-availability" checked>
+								<label for="bluetooth-availability">Есть</label>
+							</li>
+							<li>
+								<input type="radio" name="bluetooth" value="no" id="bluetooth-availability">
+								<label for="bluetooth-availability">Нет</label>
+							</li>
+						</ul>
+					</fieldset>
+					<button class="filter-button" type="submit">Показать</button>
+				</form>
 			</div>
 			<div class="sort">
 				<div class="sort-links">	
