@@ -45,13 +45,13 @@
 			<h2 class="visually-hidden">Контент каталога</h2>
 			<div class="filter">
 				<h3 class="catalog-title">Фильтр:</h3>
-				<form class="filter-form" action="https://echo.htmlacademy.ru" oninput="priceoutput.value=pricerange.value">
-					<fieldset>
+				<form class="filter-form" action="https://echo.htmlacademy.ru">
+					<fieldset class="filter-price">
 						<legend>Стоимость</legend>
 						<input type="range" min="0" max="10000" step="100" id="pricerange">
 						<output name="priceoutput"></output>
 					</fieldset>
-					<fieldset>
+					<fieldset class="filter-color">
 						<legend>Цвет</legend>
 						<ul>
 							<li>
@@ -86,7 +86,7 @@
 							</li>
 						</ul>
 					</fieldset>
-					<fieldset>
+					<fieldset class="filter-bluetooth">
 						<legend>Bluetooth</legend>
 						<ul>
 							<li>
