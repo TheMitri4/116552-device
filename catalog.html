@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>HTML Academy: Девайс</title>
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
 </head>
 <body>
 	<header class="main-header">
@@ -35,12 +37,14 @@
 		</nav>
 	</header>  
 	<main class="container">
-		<h1>Моноподы для селфи</h1>
-		<ul class="breadcrumbs">
-			<li><a href="index.html">Главная</a></li>
-			<li><a href="catalog.html">Каталог товаров</a></li>
-			<li class="breadcrumbs-current"><a>Моноподы для селфи</a></li>
-		</ul>
+		<section class="content-header">
+			<h2>Моноподы для селфи</h2>
+			<ul class="breadcrumbs">
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="catalog.html">Каталог товаров</a></li>
+				<li class="breadcrumbs-current"><a>Моноподы для селфи</a></li>
+			</ul>
+		</section>
 		<section class="catalog-content">
 			<h2 class="visually-hidden">Контент каталога</h2>
 			<div class="filter">
@@ -79,7 +83,7 @@
 								</label>
 							</li>
 							<li>
-								<input type="checkbox" name="pink" id="filter-pink">
+								<input type="checkbox" name="pink" id="filter-pink" disabled>
 								<label for="filter-pink">
 									Розовый
 								</label>
@@ -107,7 +111,7 @@
 					<h3 class="catalog-title">Сортировка:</h3>
 					<ul class="sort-type">
 						<li>
-							<a href="#">По цене</a>
+							<a href="#" class="sort-selected">По цене</a>
 						</li>
 						<li>
 							<a href="#">По типу</a>
@@ -130,8 +134,8 @@
 						<div class="catalog-item-info">
 							<img src="img/Catalog/item-1.jpg" width="360" height="380" 	alt="Любительская селфи-палка">
 							<div class="catalog-item-buy">
-								<a href="#">В корзину</a>
-								<a href="#">Добавить к сравнению</a>
+								<a href="#" class="catalog-cart-button">В корзину</a>
+								<a href="#" class="catalog-compare-button">Добавить к сравнению</a>
 							</div>
 						</div>	
 						<div class="catalog-item-about">
@@ -143,8 +147,8 @@
 						<div class="catalog-item-info">
 							<img src="img/Catalog/item-2.jpg" width="360" height="380" 	alt="Профессиональная селфи-палка">
 							<div class="catalog-item-buy">
-								<a href="#">В корзину</a>
-								<a href="#">Добавить к сравнению</a>
+								<a href="#" class="catalog-cart-button">В корзину</a>
+								<a href="#" class="catalog-compare-button">Добавить к сравнению</a>
 							</div>
 						</div>	
 						<div class="catalog-item-about">
@@ -156,8 +160,8 @@
 						<div class="catalog-item-info">
 							<img src="img/Catalog/item-3.jpg" width="360" height="380" 	alt="Непотопляемая селфи-палка">
 							<div class="catalog-item-buy">
-								<a href="#">В корзину</a>
-								<a href="#">Добавить к сравнению</a>
+								<a href="#" class="catalog-cart-button">В корзину</a>
+								<a href="#" class="catalog-compare-button">Добавить к сравнению</a>
 							</div>
 						</div>	
 						<div class="catalog-item-about">
@@ -169,8 +173,8 @@
 						<div class="catalog-item-info">
 							<img src="img/Catalog/item-4.jpg" width="360" height="380" 	alt="Селфи-палка Следуй за мной">
 							<div class="catalog-item-buy">
-								<a href="#">В корзину</a>
-								<a href="#">Добавить к сравнению</a>
+								<a href="#" class="catalog-cart-button">В корзину</a>
+								<a href="#" class="catalog-compare-button">Добавить к сравнению</a>
 							</div>
 						</div>	
 						<div class="catalog-item-about">
@@ -181,10 +185,10 @@
 				</ul>
 				<ul class="pagination-list">
 					<li class="pagination-item">
-						<a href="#">Назад</a>
+						<a href="#" class="pagination-button">Назад</a>
 					</li>
-					<li class="pagination-item pagination-item-current">
-						<a>1</a>
+					<li class="pagination-item">
+						<a href="" class="pagination-item-current">1</a>
 					</li>
 					<li class="pagination-item">
 						<a href="#">2</a>
@@ -193,7 +197,7 @@
 						<a href="#">3</a>
 					</li>
 					<li class="pagination-item">
-						<a href="#">Вперед</a>
+						<a href="#" class="pagination-button">Вперед</a>
 					</li>
 				</ul>
 			</div>	

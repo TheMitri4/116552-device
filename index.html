@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
   </head>
   <body>
 		<header class="main-header">
 			<h2 class="logo">Device</h2>
 			<form action="https://echo.htmlacademy.ru" method="post">
 				<input type="search" name="search" placeholder="Поиск по сайту">
-				<button type="submit">Найти</button>
+				<button type="submit" class="search-button">Найти</button>
 			</form>
 			<nav class="user-navigation">
 				<ul>
@@ -129,7 +131,7 @@
 				<input type="radio" name="services" value="credit" id="credit-radio">
 				<label for="credit-radio">Кредит</label>
 				Оставляю на всякий случай-->
-				<a href="#delivery">Доставка</a>
+				<a href="#delivery" class="services-selected">Доставка</a>
 				<a href="#warranty">Гарантия</a>
 				<a href="#credit">Кредит</a>
 			</div>
@@ -181,7 +183,7 @@
 		<footer class="main-footer">
 			<div class="footer-user-link">
 			<h2 class="logo">Device</h2>
-				<nav class="user-navigation">
+				<nav class="footer-user-navigation">
 					<ul>
 						<li><a href="#">Войти</a></li>
 						<li><a href="#">Валентин Петухов</a></li>
