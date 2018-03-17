@@ -132,6 +132,20 @@ a{
 .main-navigation li, .user-navigation li , .footer-user-navigation li{
 	list-style: none;
 }
+.sub-menu a{
+	font-family: "Open sans" , Arial, sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	text-transform: none;
+	line-height: 36px;
+	letter-spacing: normal;
+}
+.sub-menu a:hover{
+	opacity: 0.6;
+}
+.sub-menu a:active{
+	opacity: 0.3;
+}
 .slider-title{
 	font-size: 47px;
 	line-height: 56px;
