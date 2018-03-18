@@ -7,8 +7,8 @@
 }
 @font-face{
 	font-family: "Gilroy";
-	src: url(../fonts/gilroyextra800.woff2);
-	src: url(../fonts/gilroyextra800.woff);
+	src: url(../fonts/gilroyextrabold.woff2);
+	src: url(../fonts/gilroyextrabold.woff);
 	font-weight: 800;
 	font-style: normal;
 }
@@ -56,6 +56,7 @@ a{
 	font-size: 48px;
 	line-height: 48px;
 	font-weight: 800;
+	letter-spacing: 0.01em;
 }
 .logo:hover , .logo:focus{
 	opacity: 0.6;
@@ -70,29 +71,51 @@ a{
 	font-family: "Open sans" , Arial, sans-serif;
 	font-weight: 300;
 	line-height: 30px;
-}
-::-webkit-input-placeholder{
-	color: rgba(0, 0, 0, 0.3)
-}
-::-moz-placeholder{
-	color: rgba(0, 0, 0, 0.3)
-}
-:-moz-placeholder{
-	color: rgba(0, 0, 0, 0.3)
-}
-:-ms-input-placeholder{
-	color: rgba(0, 0, 0, 0.3)
-}
-.main-header input::before{
-	content: "";
-	background: url(../img/icons/icon-search.svg) no-repeat;
-	width: 16px;
-	height: 16px;
-	display: block;
+	letter-spacing: 0.01em;
 }
 .main-header input:focus{
 	border-bottom: 2px solid black;
 	outline: 0;
+}
+.main-header input::-webkit-input-placeholder{
+	color: rgba(0, 0, 0, 0.3);
+	opacity: 1;
+}
+.main-header input::-moz-placeholder{
+	color: rgba(0, 0, 0, 0.3);
+	opacity: 1;
+}
+.main-header input:-moz-placeholder{
+	color: rgba(0, 0, 0, 0.3);
+	opacity: 1;
+}
+.main-header input:-ms-input-placeholder{
+	color: rgba(0, 0, 0, 0.3);
+	opacity: 1;
+}
+.main-header input:hover::-webkit-input-placeholder{
+	color: rgba(0, 0, 0, 0.6);
+}
+.main-header input:hover::-moz-placeholder{
+	color: rgba(0, 0, 0, 0.6);
+}
+.main-header input:hover:-moz-placeholder{
+	color: rgba(0, 0, 0, 0.6);
+}
+.main-header input:hover:-ms-input-placeholder{
+	color: rgba(0, 0, 0, 0.6);
+}
+.main-header input:focus::-webkit-input-placeholder{
+	color: rgba(0, 0, 0, 1);
+}
+.main-header input:focus::-moz-placeholder{
+	color: rgba(0, 0, 0, 1);
+}
+.main-header input:focus:-moz-placeholder{
+	color: rgba(0, 0, 0, 1);
+}
+.main-header input:focus:-ms-input-placeholder{
+	color: rgba(0, 0, 0, 1);
 }
 .search-button{
 	width: 85px;
@@ -101,9 +124,16 @@ a{
 	color: #000000;
 	font-family: "Open sans" , Arial, sans-serif;
 	font-weight: 300;
+	letter-spacing: 0.01em;
 	border: 2px solid #000000;
+	padding: 0;
+	display: none;
 }
-.search-button:hover , .search-button:focus{
+.main-header input:focus +.search-button{
+	display: inline-block;
+}
+.search-button:hover,
+.search-button:focus{
 	background-color: #000000;
 	color: #ffffff;
 	outline: 0;
@@ -118,18 +148,24 @@ a{
 	font-weight: 800;
 	letter-spacing: 0.2em;
 }
-.user-navigation , .footer-user-navigation{
+.user-navigation,
+.footer-user-navigation{
 	font-family: "Open sans" , Arial, sans-serif;
 	font-weight: 300;
 	line-height: 30px;
+	letter-spacing: 0.01em;
 }
-.main-header a:hover , .footer-navigation a:hover{
+.main-header a:hover,
+.footer-navigation a:hover{
 	opacity: 0.6;
 }
-.main-header a:active ,.footer-navigation a:active{
+.main-header a:active,
+.footer-navigation a:active{
 	opacity: 0.3;
 }
-.main-navigation li, .user-navigation li , .footer-user-navigation li{
+.main-navigation li,
+.user-navigation li,
+.footer-user-navigation li{
 	list-style: none;
 }
 .sub-menu a{
@@ -138,57 +174,53 @@ a{
 	font-weight: 300;
 	text-transform: none;
 	line-height: 36px;
-	letter-spacing: normal;
-}
-.sub-menu a:hover{
-	opacity: 0.6;
-}
-.sub-menu a:active{
-	opacity: 0.3;
+	letter-spacing: 0.01em;
 }
 .slider-title{
 	font-size: 47px;
 	line-height: 56px;
 	font-weight: 800;
+	letter-spacing: 0.01em;
+}
+.btn{
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 24px;
+	letter-spacing: 0.2em;
 }
 .slider-descr{
 	font-family: "Open sans" , Arial, sans-serif;
 	font-weight: 300;
 	line-height: 30px;
 	color: #464646;
-}
-.slider-link{
-	text-transform: uppercase;
-	font-size: 18px;
-	line-height: 24px;
-}
-.slider-table tr:first-of-type{
-	font-family: "Gilroy" , Arial , sans-serif;
-	font-size: 36px;
-	line-height: 48px;
+	letter-spacing: 0.01em;
 }
 .slider-table tr{
 	font-family: "Open sans" , Arial, sans-serif;
 	font-weight: 300;
 	font-size: 13px;
 	line-height: 20px;
+	letter-spacing: 0.01em;
+}
+.slider-table tr:first-of-type{
+	font-family: "Gilroy" , Arial , sans-serif;
+	font-size: 36px;
+	line-height: 48px;
+	letter-spacing: 0.01em;
 }
 .popular-list{
 	list-style: none;
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 800;
-}
-.services-navigation a{
-	font-size: 18px;
-	font-weight: 800;
-	line-height: 24px;
-	letter-spacing: 0.2em;
+	letter-spacing: 0.01em;
 }
 .services-navigation a:hover{
 	
 }
-.services-navigation a:active , .services-navigation a:focus{
+.services-navigation a:active,
+.services-navigation a:focus{
 	color: #f7e184;
 }
 .services-navigation .services-selected{
@@ -201,23 +233,36 @@ a{
 	font-weight: 800;
 	font-size: 47px;
 	line-height: 48px;
+	letter-spacing: 0.01em;
 }
 .services-item p{
 	font-family: "Open sans" , Arial, sans-serif;
 	font-weight: 300;
 	color: #464646;
+	letter-spacing: 0.01em;
 }
 .logotypes-list{
 	list-style: none;
 	display: flex;
 }
-.logotypes-list li{
+.logotypes-list img{
 	opacity: 0.2;
+}
+.logotypes-list .logo-color{
+	opacity: 1;
+	display: none;
+}
+.logotypes-list li:hover img{
+	display: none;
+}
+.logotypes-list li:hover .logo-color{
+	display: block;
 }
 .info-title{
 	font-weight: 800;
 	font-size: 47px;
 	line-height: 48px;
+	letter-spacing: 0.01em;
 }
 .info p{
 	font-family: "Open sans" , Arial, sans-serif;
@@ -229,27 +274,20 @@ a{
 	font-weight: 800;
 	line-height: 40px;
 }
-.info a{
-	text-transform: uppercase;
-	font-size: 18px;
-	font-weight: 800;
-	line-height: 24px;
-	letter-spacing: 0.2em;
-}
 .main-footer{
 	background-color: #464646;
+	color: #ffffff;
 }
 .main-footer .logo{
 	color: #ffc600;
 }
-.main-footer .user-navigation{
+.footer-user-navigation{
 	line-height: 36px;
 }
 .main-footer a{
-	color: #ffffff;
+	color: inherit;
 }
 .main-footer p{
-	color: #ffffff;
 	font-family: "Open sans" , Arial, sans-serif;
 	font-weight: 300;
 }
@@ -258,7 +296,8 @@ a{
 	text-transform: uppercase;
 	font-size: 18px;
 	font-weight: 800;
-	line-height: 24px;	
+	line-height: 24px;
+	letter-spacing: 0.2em;
 }
 .social-navigation li{
 	list-style: none;
@@ -285,6 +324,7 @@ a{
 	width: 360px;
 	height: 50px;
 	padding-left: 20px;
+	padding-right: 20px;
 }
 .write-us-form textarea{
 	background-color: #f2f2f2;
@@ -297,13 +337,9 @@ a{
 	height: 156px;
 }
 .write-us-button{
-	font-size: 18px;
-	font-weight: 800;
-	line-height: 24px;
-	text-transform: uppercase;
 	border: 0;
 	background-color: #f0c52e;
-	letter-spacing: 0.2em;
+	padding: 0;
 }
 
 /*Стили каталога*/
@@ -312,15 +348,17 @@ a{
 	font-size: 47px;
 	font-weight: 800;
 	line-height: 48px;
+	letter-spacing: 0.01em;
 }
 .breadcrumbs{
 	list-style: none;
-}
-.breadcrumbs a{
 	font-family: "Open sans" , Arial, sans-serif;
 	font-weight: 300;
 	font-size: 14px;
 	line-height: 24px;
+	letter-spacing: 0.01em;
+}
+.breadcrumbs a{
 	opacity: 0.3;
 }
 .breadcrumbs a:hover{
@@ -342,29 +380,29 @@ a{
 .filter fieldset{
 	border: 0;
 }
-.filter li{
+.filter ul{
 	list-style: none;
 }
 .filter legend{
 	font-size: 18px;
 	font-weight: 800;
 	line-height: 24px;
+	letter-spacing: 0.01em;
 }
-.filter-color label{
+.filter-color label,
+.filter-bluetooth label{
 	font-family: "Open sans" , Arial, sans-serif;
 	font-weight: 300;
 	font-size: 14px;
 	line-height: 40px;
+	letter-spacing: 0.01em;
 }
 .filter input:disabled + label{
 	color: #a6a6a6;
 }
 .filter-button{
-	font-size: 18px;
-	font-weight: 800;
-	text-transform: uppercase;
-	letter-spacing: 0.2em;
 	border: 0;
+	padding: 0;
 }
 .sort ul{
 	list-style: none;
@@ -372,29 +410,27 @@ a{
 .sort-type a{
 	font-family: "Open sans" , Arial, sans-serif;
 	font-size: 14px;
-	line-height: 15px;
+	line-height: 18px;
 	opacity: 0.3;
 }
 .sort-type a:hover{
 	opacity: 0.6;
 }
-.sort-type .sort-selected , .sort-type a:active{
+.sort-type .sort-selected
+, .sort-type a:active{
 	opacity: 1;
 }
 .catalog-item-title{
 	font-size: 18px;
 	font-weight: 800;
 	line-height: 24px;
+	letter-spacing: 0.01em;
 }
 .catalog-item-price{
 	font-size: 16px;
 	line-height: 24px;
 	color: #464646;
-}
-.catalog-cart-button{
-	font-size: 18px;
-	font-weight: 800;
-	letter-spacing: 0.2em;
+	letter-spacing: 0.01em;
 }
 .catalog-cart-button:active{
 	opacity: 0.3;
@@ -405,6 +441,7 @@ a{
 	font-weight: 300;
 	line-height: 36px;
 	opacity: 0.5;
+	letter-spacing: 0.01em;
 }
 .catalog-compare-button:hover{
 	opacity: 1;
@@ -415,9 +452,6 @@ a{
 .pagination-list{
 	background-color: #ebebeb;
 	display: flex;
-	padding: 30px;
-	width: 760px;
-	justify-content: space-between;
 }
 .pagination-item a{
 	font-size: 16px;
@@ -425,6 +459,7 @@ a{
 	text-transform: uppercase;
 	line-height: 24px;
 	opacity: 0.3;
+	letter-spacing: 0.2em;
 }
 .pagination-list .pagination-item-current{
 	opacity: 1;
@@ -447,17 +482,4 @@ a{
 .pagination-item .pagination-button:active{
 	color: rgba(0, 0, 0, 0.3);
 	background-color: #d9d9d9;
-}
-
-/* Попытка  сделать логотипы*/
-
-.logotypes-list .logo-color{
-	opacity: 1;
-	display: none
-}
-.logotypes-list li:hover{
-	display: none;
-}
-.logotypes-list li:hover +.logo-color{
-	display: block;
 }

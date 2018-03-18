@@ -7,35 +7,45 @@
 	<link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-	<header class="main-header">
-		<a href="index.html"><h2 class="logo">Device</h2></a>
-		<nav class="user-navigation">
-			<ul>
-				<li><a href="#">Войти</a></li>
-				<li><a href="#">Валентин Петухов</a></li>
-				<li><a href="#">Выйти</a></li>
-				<li><a href="#">Сравнить</a></li>
-				<li><a href="#">Корзина</a></li>
-			</ul>	
-		</nav>	
-		<nav class="main-navigation">
-			<ul>
-				<li><a href="#">Каталог товаров</a>
-					<ul>
-						<li><a href="#">Виртуальная реальность</a></li>
-						<li><a href="#">Моноподы для селфи</a></li>
-						<li><a href="#">Экшн-камеры</a></li>
-						<li><a href="#">Фитнес-браслеты</a></li>
-						<li><a href="#">Умные часы</a></li>
-						<li><a href="#">Квадрокоптеры</a></li>
-					</ul>
-				</li>
-				<li><a href="#">Доставка</a></li>
-				<li><a href="#">Гарантия</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
-		</nav>
-	</header>  
+<header class="main-header">
+			<h2 class="logo">Device</h2>
+			<form action="https://echo.htmlacademy.ru" method="post">
+				<input type="search" name="search" placeholder="Поиск по сайту">
+				<button type="submit" class="search-button">Найти</button>
+			</form>
+			<nav class="user-navigation">
+				<ul>
+					<li><a href="#">Войти</a></li>
+					<li><a href="#">Валентин Петухов</a></li>
+					<li><a href="#">Выйти</a></li>
+					<li><a href="#">Сравнить</a></li>
+					<li><a href="#">Корзина</a></li>
+				</ul>	
+			</nav>	
+			<nav class="main-navigation">
+				<ul>
+					<li><a href="#">Каталог товаров</a>
+						<div class="sub-menu">
+							<ul>
+								<li><a href="#">Виртуальная реальность</a></li>
+								<li><a href="#">Моноподы для селфи</a></li>
+								<li><a href="#">Экшн-камеры</a></li>
+							</ul>	
+							<ul>
+								<li><a href="#">Фитнес-браслеты</a></li>
+								<li><a href="#">Умные часы</a></li>
+							</ul>	
+							<ul>
+								<li><a href="#">Квадрокоптеры</a></li>
+							</ul>	
+						</div>
+					</li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Гарантия</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+		</header>  
 	<main class="container">
 		<section class="content-header">
 			<h2>Моноподы для селфи</h2>
@@ -103,7 +113,7 @@
 							</li>
 						</ul>
 					</fieldset>
-					<button class="filter-button" type="submit">Показать</button>
+					<button class="filter-button btn" type="submit">Показать</button>
 				</form>
 			</div>
 			<div class="sort">
@@ -134,7 +144,7 @@
 						<div class="catalog-item-info">
 							<img src="img/Catalog/item-1.jpg" width="360" height="380" 	alt="Любительская селфи-палка">
 							<div class="catalog-item-buy">
-								<a href="#" class="catalog-cart-button">В корзину</a>
+								<a href="#" class="catalog-cart-button btn">В корзину</a>
 								<a href="#" class="catalog-compare-button">Добавить к сравнению</a>
 							</div>
 						</div>	
@@ -147,7 +157,7 @@
 						<div class="catalog-item-info">
 							<img src="img/Catalog/item-2.jpg" width="360" height="380" 	alt="Профессиональная селфи-палка">
 							<div class="catalog-item-buy">
-								<a href="#" class="catalog-cart-button">В корзину</a>
+								<a href="#" class="catalog-cart-button btn">В корзину</a>
 								<a href="#" class="catalog-compare-button">Добавить к сравнению</a>
 							</div>
 						</div>	
@@ -160,7 +170,7 @@
 						<div class="catalog-item-info">
 							<img src="img/Catalog/item-3.jpg" width="360" height="380" 	alt="Непотопляемая селфи-палка">
 							<div class="catalog-item-buy">
-								<a href="#" class="catalog-cart-button">В корзину</a>
+								<a href="#" class="catalog-cart-button btn">В корзину</a>
 								<a href="#" class="catalog-compare-button">Добавить к сравнению</a>
 							</div>
 						</div>	
@@ -173,7 +183,7 @@
 						<div class="catalog-item-info">
 							<img src="img/Catalog/item-4.jpg" width="360" height="380" 	alt="Селфи-палка Следуй за мной">
 							<div class="catalog-item-buy">
-								<a href="#" class="catalog-cart-button">В корзину</a>
+								<a href="#" class="catalog-cart-button btn">В корзину</a>
 								<a href="#" class="catalog-compare-button">Добавить к сравнению</a>
 							</div>
 						</div>	
@@ -203,40 +213,40 @@
 			</div>	
 		</section>	
 	</main>
-	<footer class="main-footer">
-		<div class="footer-user-link">
-		<h2 class="logo">Device</h2>
-			<nav class="user-navigation">
-				<ul>
-					<li><a href="#">Войти</a></li>
-					<li><a href="#">Валентин Петухов</a></li>
-					<li><a href="#">Выйти</a></li>
-					<li><a href="#">Сравнить</a></li>
-					<li><a href="#">Корзина</a></li>		
-				</ul>
-			</nav>
-		</div>
-		<div class="footer-nav">
-			<p>г.Москва, ул. Строителей, 15</p>
-			<nav class="footer-navigation">
-				<ul>
-					<li><a href="#">Доставка</a></li>
-					<li><a href="#">Гарантия</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
-			</nav>
-			<p>Тел: +7(495)4959595</p>
-		</div>
-		<div class="footer-social">
-			<nav class="social-navigation">
-				<ul>
-					<li><a href="#">Facebook</a></li>
-					<li><a href="#">Instagram</a></li>
-					<li><a href="#">Twitter</a></li>			
-				</ul>
-			</nav>
-			<a href="#">HtmlAcademy</a>
-		</div>
-	</footer>
+<footer class="main-footer">
+			<div class="footer-user-link">
+			<h2 class="logo">Device</h2>
+				<nav class="footer-user-navigation">
+					<ul>
+						<li><a href="#">Войти</a></li>
+						<li><a href="#">Валентин Петухов</a></li>
+						<li><a href="#">Выйти</a></li>
+						<li><a href="#">Сравнить</a></li>
+						<li><a href="#">Корзина</a></li>		
+					</ul>
+				</nav>
+			</div>
+			<div class="footer-nav">
+				<p>г.Москва, ул. Строителей, 15</p>
+				<nav class="footer-navigation">
+					<ul>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Гарантия</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<p>Тел: +7(495)4959595</p>
+			</div>
+			<div class="footer-social">
+				<nav class="social-navigation">
+					<ul>
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">Instagram</a></li>
+						<li><a href="#">Twitter</a></li>			
+					</ul>
+				</nav>
+				<a href="#">HtmlAcademy</a>
+			</div>
+		</footer>
 </body>
 </html>
