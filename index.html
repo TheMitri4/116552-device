@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-  </head>
-  <body>
+	<head>
+	  <meta charset="utf-8">
+	  <title>HTML Academy: Девайс</title>
+	  <link href="css/normalize.css" rel="stylesheet">
+	  <link href="css/main.css" rel="stylesheet">
+	</head>
+	<body>
 		<header class="main-header container">
 			<div class="main-header-background">
 				<a href="#"><h2 class="logo">Device</h2></a>
@@ -31,7 +31,7 @@
 				</div>
 				<nav class="main-navigation">
 					<ul class="main-navigation-list">
-						<li><a href="#">Каталог товаров</a>
+						<li class="icon-plus"><a href="catalog.html">Каталог товаров</a>
 							<div class="sub-menu">
 								<ul>
 									<li><a href="#">Виртуальная реальность</a></li>
@@ -240,7 +240,6 @@
 					<p>Тел: +7(495)4959595</p>
 				</div>
 				<div class="footer-social">
-					<div class="footer-social-decoration"></div>
 					<nav class="social-navigation">
 						<ul>
 							<li><a href="#" class="facebook">Facebook</a></li>
@@ -248,9 +247,9 @@
 							<li><a href="#" class="twitter">Twitter</a></li>
 						</ul>
 					</nav>
-					<ul class="htmlacademy-container">
-						<li><a href="#" class="htmlacademy">HtmlAcademy</a></li>
-					</ul>
+					<div class="htmlacademy-container">
+						<a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy">HtmlAcademy</a>
+					</div>	
 				</div>
 			</div>
 		</footer>
@@ -277,6 +276,7 @@
 		</section>
 		<section class="map-popup">
 			<h2 class="visually-hidden">Карта</h2>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.10907026883!2d37.52756879079683!3d55.68709146033518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2s!4v1522194621894" width="960" height="559" frameborder="0" style="border:0" allowfullscreen></iframe>
 			<img src="img/map-big.jpg" width="960" height="559" alt="Карта"> 
 			<button type="button" class="close">Закрыть</button>
 		</section>	
@@ -288,6 +288,9 @@
 		var writeuspopup = document.querySelector(".write-us");
 		var mapclose = mappopup.querySelector(".close");
 		var writeusclose = writeuspopup.querySelector(".close");
+		var form = writeuspopup.querySelector("form");
+		var username = writeuspopup.querySelector("[name=name]");
+		var email = writeuspopup.querySelector("[name=email]");
 		
 		maplink.addEventListener("click", function (evt) {
 			evt.preventDefault();
@@ -301,10 +304,25 @@
 		writeuslink.addEventListener("click", function (evt) {
 			evt.preventDefault();
 			writeuspopup.classList.add("modal-show");
+			username.focus();
 		});
 		writeusclose.addEventListener("click", function(evt) {
 			evt.preventDefault();
 			writeuspopup.classList.remove("modal-show");
+			username.classList.remove("modal-error");
+			email.classList.remove("modal-error");
+		});
+		
+		form.addEventListener("submit", function (evt){
+			if (!username.value){
+				evt.preventDefault();
+				username.classList.add("modal-error");
+			} else {
+				if (!email.value){
+					evt.preventDefault();
+					email.classList.add("modal-error");
+				}
+			}
 		});
 	</script>
 	</body>

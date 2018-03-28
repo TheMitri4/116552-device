@@ -31,7 +31,7 @@
 			</div>
 			<nav class="main-navigation">
 				<ul class="main-navigation-list">
-					<li><a href="#">Каталог товаров</a>
+					<li class="icon-plus"><a href="#">Каталог товаров</a>
 						<div class="sub-menu">
 							<ul>
 								<li><a href="#">Виртуальная реальность</a></li>
@@ -126,7 +126,7 @@
 									<label for="bluetooth-availability-yes">Есть</label>
 								</li>
 								<li>
-									<input class="filter-input-radio visually-hidden" type="radio" name="bluetooth" value="no" id="bluetooth-availability-no">
+									<input class="filter-input-radio visually-hidden" type="radio" name="bluetooth" value="no" id="bluetooth-availability-no" disabled>
 									<label for="bluetooth-availability-no">Нет</label>
 								</li>
 							</ul>
@@ -197,7 +197,7 @@
 								<b class="catalog-item-price">2500 руб.</b>
 							</div>	
 						</li>
-						<li class="catalog-item">
+						<li class="catalog-item catalog-item-new">
 							<div class="catalog-item-info">
 								<img class="catalog-item-img" src="img/Catalog/item-4.jpg" width="360" height="380" 	alt="Селфи-палка Следуй за мной">
 								<div class="catalog-item-buy">
@@ -215,13 +215,13 @@
 						<li class="pagination-item">
 							<a href="#" class="pagination-button">Назад</a>
 						</li>
-						<li class="pagination-item">
+						<li class="pagination-item pagination-number">
 							<a href="" class="pagination-item-current">1</a>
 						</li>
-						<li class="pagination-item">
+						<li class="pagination-item pagination-number">
 							<a href="#">2</a>
 						</li>
-						<li class="pagination-item">
+						<li class="pagination-item pagination-number">
 							<a href="#">3</a>
 						</li>
 						<li class="pagination-item">
@@ -262,7 +262,6 @@
 				<p>Тел: +7(495)4959595</p>
 			</div>
 			<div class="footer-social">
-				<div class="footer-social-decoration"></div>
 				<nav class="social-navigation">
 					<ul>
 						<li><a href="#" class="facebook">Facebook</a></li>
@@ -270,9 +269,9 @@
 						<li><a href="#" class="twitter">Twitter</a></li>
 					</ul>
 				</nav>
-				<ul class="htmlacademy-container">
-					<li><a href="#" class="htmlacademy">HtmlAcademy</a></li>
-				</ul>
+				<div class="htmlacademy-container">
+					<a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy">HtmlAcademy</a>
+				</div>	
 			</div>
 		</div>
 	</footer>
