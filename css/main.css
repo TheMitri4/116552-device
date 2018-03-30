@@ -125,6 +125,7 @@ img{
 	letter-spacing: 0.01em;
 	margin: 0;
 	display: inline-block;
+	vertical-align: middle;
 }
 .main-header .logo{
 	margin-bottom: 8px;
@@ -157,6 +158,7 @@ img{
 	padding-left: 40px;
 	padding-right: 15px;
 	border-bottom: 2px solid transparent;
+	height: 50px;
 }
 .main-header input:focus{
 	border-bottom: 2px solid black;
@@ -912,9 +914,9 @@ img{
 }
 .htmlacademy::before{
 	content: "";
-	width: 27px;
+	width: 28px;
 	height: 35px;
-	background: url(../img/icons/icon-logo-html.svg) no-repeat;
+	background: url(../img/icons/icon-logo-html.svg) no-repeat 50% 50%;
 	display: block;
 	float: right;
 }
@@ -1396,6 +1398,7 @@ img{
 	padding-left: 72px;
 	padding-bottom: 77px;
 	width: 832px;
+	box-sizing: border-box;
 }
 .sort-links{
 	display: flex;
