@@ -13,6 +13,7 @@ maplink.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	mappopup.classList.add("modal-show");
 });
+
 mapclose.addEventListener("click", function (evt) {
 	"use strict";
 	evt.preventDefault();
@@ -25,6 +26,7 @@ writeuslink.addEventListener("click", function (evt) {
 	writeuspopup.classList.add("modal-show");
 	username.focus();
 });
+
 writeusclose.addEventListener("click", function (evt) {
 	"use strict";
 	evt.preventDefault();
