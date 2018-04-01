@@ -41,10 +41,12 @@ form.addEventListener("submit", function (evt) {
 		evt.preventDefault();
 		if (!username.value) {
 			evt.preventDefault();
+			username.classList.remove("modal-error");
 			username.classList.add("modal-error");
 		}
 		if (!email.value) {
 			evt.preventDefault();
+			email.classList.remove("modal-error");
 			email.classList.add("modal-error");
 		}
 	}
